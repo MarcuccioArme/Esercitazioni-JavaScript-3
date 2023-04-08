@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 2</title>
+
+    <script>
+
+        var K;
+        k = prompt ("Quanti numeri vuoi inserire?");
+
+        var Valori = new Array(k);
+
+        for (var i=0; i<k; i++) {
+            Valori[i] = prompt ("Inserisci il numero:");
+        }
+        alert ("Array inserito con successo!");
+
+        var Valori_Copia = new Array(k);
+
+        for (var i=0; i<k; i++) {
+            Valori_Copia[i] = Valori [i]
+        }
+
+        document.write ("Il primo array: "+Valori+"<br>");
+        document.write ("Array di copia: "+Valori_Copia);
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

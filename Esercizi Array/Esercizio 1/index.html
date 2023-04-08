@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 1</title>
+
+    <script>
+        
+        var K;
+        k = prompt ("Quanti numeri vuoi inserire?");
+
+        var Numeri = new Array(k);
+
+        for (var i=0; i<k; i++) {
+            Numeri[i] = prompt ("Inserisci il numero:");
+        }
+        alert ("Array inserito con successo!");
+
+        var x;
+        x = prompt ("Che numero vuoi cercare?");
+
+        var flag = false;
+        var c = 0;
+        for (var i=0; i<k; i++) {
+            if (Numeri [i] == x) {
+                flag = true;
+                c++;
+            }
+        }
+
+        if (flag == true) {
+            alert ("Il numero "+x+" è presente "+c+" volte");
+        }
+        else {
+            alert ("Il numero non è presente");
+        }
+
+        alert ("L'array è: "+Numeri)
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

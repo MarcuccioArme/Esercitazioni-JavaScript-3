@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 3</title>
+
+    <script>
+
+        var K;
+        k = prompt ("Quanti numeri vuoi inserire?");
+
+        var Dati = new Array(k);
+
+        for (var i=0; i<k; i++) {
+            Dati[i] = prompt ("Inserisci il numero:");
+        }
+        alert ("Array inserito con successo!");
+
+        console.log(Dati);
+
+        var x;
+        x = prompt ("Inserisci il valore di X:");
+
+        var Somma = 0;
+        for (var i=0; i<k; i=i+2) {
+            Somma += parseInt(Dati[i]);
+        }
+
+        console.log (Somma);
+
+        if (Somma <= x) {
+            alert ("Condizione ESERCIZIO 2 verificata");
+        }
+        else {
+            alert ("Condizione ESERCIZIO 2 non verificata");
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
